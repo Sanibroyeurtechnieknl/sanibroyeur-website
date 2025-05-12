@@ -13,13 +13,13 @@ const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 
+
 export const metadata: Metadata = {
   title: {
     default: 'Sanibroyeur Techniek Nederland - Expert Service & Reparatie',
     template: '%s | Sanibroyeur Techniek Nederland',
   },
-  description: 'Uw specialist voor sanibroyeur installatie, reparatie, en onderhoud in heel Nederland. Snelle service, vakkundige oplossingen.',
-
+  description: 'Uw specialist voor sanibroyeur installatie, reparatie, en heel Nederland. Snelle service, vakkundige oplossingen.',
 
 });
 icons: {
@@ -37,6 +37,15 @@ icons: {
     siteConfig.name,
     "toilet installeren zonder afvoer",
     "badkamer verbouwen",
+"Sanibroyeur",
+    "Sanibroyeur expert",
+    "Sanibroyeur installatie",
+    "Sanibroyeur reparatie",
+    "Sanibroyeur onderhoud",
+    "WC vermaler",
+    "broyeur toilet",
+    "Sanibroyeur Techniek NL",
+    "Nederland",
   ],
   metadataBase: new URL(siteConfig.url),
   openGraph: {
