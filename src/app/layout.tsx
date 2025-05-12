@@ -14,20 +14,18 @@ const fontSans = FontSans({
   variable: "--font-sans",
 
 
+
 export const metadata: Metadata = {
+  // Basis SEO & Site Identificatie
+  metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Sanibroyeur Techniek Nederland - Expert Service & Reparatie',
-    template: '%s | Sanibroyeur Techniek Nederland',
+    default: siteConfig.name || 'Sanibroyeur Techniek Nederland - Expert Service & Reparatie',
+    template: `%s | ${siteConfig.name || 'Sanibroyeur Techniek Nederland'}`,
   },
-  description: 'Uw specialist voor sanibroyeur installatie, reparatie, en heel Nederland. Snelle service, vakkundige oplossingen.',
-
-});
-icons: {
-    icon: '/icon.png',
-
-
- keywords: [
+  description: siteConfig.description || 'Uw specialist voor sanibroyeur installatie, reparatie, en onderhoud in heel Nederland. Snelle service, vakkundige oplossingen.',
+  keywords: [
     "Sanibroyeur",
+    "Sanibroyeur expert",
     "Sanibroyeur installatie",
     "Sanibroyeur reparatie",
     "Sanibroyeur onderhoud",
@@ -37,16 +35,62 @@ icons: {
     siteConfig.name,
     "toilet installeren zonder afvoer",
     "badkamer verbouwen",
-"Sanibroyeur",
-    "Sanibroyeur expert",
-    "Sanibroyeur installatie",
-    "Sanibroyeur reparatie",
-    "Sanibroyeur onderhoud",
-    "WC vermaler",
-    "broyeur toilet",
     "Sanibroyeur Techniek NL",
     "Nederland",
+    // Voeg hier eventueel meer relevante trefwoorden toe
   ],
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
+  publisher: siteConfig.name,
+  alternates: {
+    canonical: siteConfig.url,
+  },
+  manifest: `${siteConfig.url}/site.webmanifest`,
+
+  // Favicons en App Icons (samengevoegd en gecorrigeerd)
+  icons: {
+    icon: '/icon.png', // Dit is het STN icoon dat ik u stuurde
+    shortcut: '/favicon.ico', // Als u ook een traditionele favicon.ico heeft/wilt
+    apple: '/apple-touch-icon.png', // Voor Apple apparaten
+    // U kunt hier eventueel nog andere formaten toevoegen, bijv. favicon-16x16.png
+  },
+
+  // Open Graph (voor social media sharing, bijv. Facebook, LinkedIn)
+  openGraph: {
+    type: "website",
+    locale: "nl_NL",
+    url: siteConfig.url,
+    title: `${siteConfig.name} - Expert in Sanibroyeur Oplossingen`,
+    description: `Professionele installatie, snelle reparatie en grondig onderhoud van uw Sanibroyeur. ${siteConfig.name} staat voor u klaar!`,
+    images: [
+      {
+        url: siteConfig.ogImage, // Zorg dat dit pad correct is in uw siteConfig
+        width: 1200,
+        height: 630,
+        alt: `Logo van ${siteConfig.name} - Sanibroyeur Specialist`,
+      },
+    ],
+    siteName: siteConfig.name,
+  },
+
+  // Twitter Card (voor social media sharing op Twitter)
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.name} - Top Sanibroyeur Service`,
+    description: `Hulp nodig met uw Sanibroyeur? ${siteConfig.name} biedt vakkundige installatie, reparatie en onderhoud. Bel ons nu!`,
+    images: [siteConfig.ogImage], // Zorg dat dit pad correct is in uw siteConfig
+    // U kunt hier eventueel nog twitter:site en twitter:creator toevoegen als u die heeft
+  },
+
+  // Robots meta tag voor zoekmachines
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
   metadataBase: new URL(siteConfig.url),
   openGraph: {
     type: "website",
