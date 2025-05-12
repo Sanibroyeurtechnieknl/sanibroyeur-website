@@ -12,16 +12,21 @@ import Script from "next/script"; // Added for JSON-LD
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
-});
 
 export const metadata: Metadata = {
-  title: {title: 'Sanibroyeur Service, Reparatie & Installatie | Sanibroyeur Techniek Nederland',
-  description: 'Last van een verstopte sanibroyeur of een defect? Sanibroyeur Techniek Nederland biedt snelle, vakkundige service, reparatie en installatie. Neem direct contact op!',
-    default: `${siteConfig.name} - Uw Sanibroyeur Specialist`,
-    template: `%s - ${siteConfig.name}`,
+  title: {
+    default: 'Sanibroyeur Techniek Nederland - Expert Service & Reparatie',
+    template: '%s | Sanibroyeur Techniek Nederland',
   },
-  description: `Zoek niet verder! ${siteConfig.name} is uw expert voor Sanibroyeur installatie, reparatie en onderhoud. Snelle service, vakmanschap en duidelijke prijzen. Neem vandaag contact op!`,
-  keywords: [
+  description: 'Uw specialist voor sanibroyeur installatie, reparatie, en onderhoud in heel Nederland. Snelle service, vakkundige oplossingen.',
+
+
+});
+icons: {
+    icon: '/icon.png',
+
+
+ keywords: [
     "Sanibroyeur",
     "Sanibroyeur installatie",
     "Sanibroyeur reparatie",

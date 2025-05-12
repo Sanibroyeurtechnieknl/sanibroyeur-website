@@ -6,6 +6,10 @@ import { siteConfig } from "@/lib/siteConfig";
 import { CheckCircle, Phone, MessageSquare, MapPin, Star } from "lucide-react";
 import ProminentCallButton from "@/components/ProminentCallButton";
 
+export const metadata: Metadata = {
+  title: 'Sanibroyeur Service, Reparatie & Installatie | Sanibroyeur Techniek Nederland', // Specifiek voor homepage
+  description: 'Last van een verstopte sanibroyeur of een defect? Sanibroyeur Techniek Nederland biedt snelle, vakkundige service, reparatie en installatie. Neem direct contact op!',
+
 // Placeholder data - replace with actual data fetching or static props
 const blogPosts = [
   {
