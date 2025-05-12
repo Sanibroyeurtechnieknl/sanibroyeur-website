@@ -1,0 +1,194 @@
+{
+  "province_name_nl": "Noord-Holland",
+  "province_name_en": "noord-holland",
+  "municipalities": [
+    {
+      "name": "Aalsmeer",
+      "slug": "aalsmeer"
+    },
+    {
+      "name": "Alkmaar",
+      "slug": "alkmaar"
+    },
+    {
+      "name": "Amstelveen",
+      "slug": "amstelveen"
+    },
+    {
+      "name": "Amsterdam",
+      "slug": "amsterdam"
+    },
+    {
+      "name": "Beemster",
+      "slug": "beemster"
+    },
+    {
+      "name": "Bergen",
+      "slug": "bergen"
+    },
+    {
+      "name": "Beverwijk",
+      "slug": "beverwijk"
+    },
+    {
+      "name": "Blaricum",
+      "slug": "blaricum"
+    },
+    {
+      "name": "Bloemendaal",
+      "slug": "bloemendaal"
+    },
+    {
+      "name": "Castricum",
+      "slug": "castricum"
+    },
+    {
+      "name": "Den Helder",
+      "slug": "den-helder"
+    },
+    {
+      "name": "Den Helder",
+      "slug": "den-helder"
+    },
+    {
+      "name": "Diemen",
+      "slug": "diemen"
+    },
+    {
+      "name": "Drechterland",
+      "slug": "drechterland"
+    },
+    {
+      "name": "Edam-Volendam",
+      "slug": "edam-volendam"
+    },
+    {
+      "name": "Enkhuizen",
+      "slug": "enkhuizen"
+    },
+    {
+      "name": "Gooise Meren",
+      "slug": "gooise-meren"
+    },
+    {
+      "name": "Haarlem",
+      "slug": "haarlem"
+    },
+    {
+      "name": "Haarlemmermeer",
+      "slug": "haarlemmermeer"
+    },
+    {
+      "name": "Heemskerk",
+      "slug": "heemskerk"
+    },
+    {
+      "name": "Heemstede",
+      "slug": "heemstede"
+    },
+    {
+      "name": "Heerhugowaard",
+      "slug": "heerhugowaard"
+    },
+    {
+      "name": "Heiloo",
+      "slug": "heiloo"
+    },
+    {
+      "name": "Hilversum",
+      "slug": "hilversum"
+    },
+    {
+      "name": "Hollands Kroon",
+      "slug": "hollands-kroon"
+    },
+    {
+      "name": "Hoorn",
+      "slug": "hoorn"
+    },
+    {
+      "name": "Huizen",
+      "slug": "huizen"
+    },
+    {
+      "name": "Koggenland",
+      "slug": "koggenland"
+    },
+    {
+      "name": "Landsmeer",
+      "slug": "landsmeer"
+    },
+    {
+      "name": "Langedijk",
+      "slug": "langedijk"
+    },
+    {
+      "name": "Laren",
+      "slug": "laren"
+    },
+    {
+      "name": "Medemblik",
+      "slug": "medemblik"
+    },
+    {
+      "name": "Oostzaan",
+      "slug": "oostzaan"
+    },
+    {
+      "name": "Opmeer",
+      "slug": "opmeer"
+    },
+    {
+      "name": "Ouder-Amstel",
+      "slug": "ouder-amstel"
+    },
+    {
+      "name": "Purmerend",
+      "slug": "purmerend"
+    },
+    {
+      "name": "Schagen",
+      "slug": "schagen"
+    },
+    {
+      "name": "Stede Broec",
+      "slug": "stede-broec"
+    },
+    {
+      "name": "Texel",
+      "slug": "texel"
+    },
+    {
+      "name": "Uitgeest",
+      "slug": "uitgeest"
+    },
+    {
+      "name": "Uithoorn",
+      "slug": "uithoorn"
+    },
+    {
+      "name": "Velsen",
+      "slug": "velsen"
+    },
+    {
+      "name": "Waterland",
+      "slug": "waterland"
+    },
+    {
+      "name": "Wijdemeren",
+      "slug": "wijdemeren"
+    },
+    {
+      "name": "Wormerland",
+      "slug": "wormerland"
+    },
+    {
+      "name": "Zaanstad",
+      "slug": "zaanstad"
+    },
+    {
+      "name": "Zandvoort",
+      "slug": "zandvoort"
+    }
+  ]
+}

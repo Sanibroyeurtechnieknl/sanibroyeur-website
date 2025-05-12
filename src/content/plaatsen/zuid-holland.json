@@ -1,0 +1,206 @@
+{
+  "province_name_nl": "Zuid-Holland",
+  "province_name_en": "zuid-holland",
+  "municipalities": [
+    {
+      "name": "Alblasserdam",
+      "slug": "alblasserdam"
+    },
+    {
+      "name": "Albrandswaard",
+      "slug": "albrandswaard"
+    },
+    {
+      "name": "Alphen aan den Rijn",
+      "slug": "alphen-aan-den-rijn"
+    },
+    {
+      "name": "Barendrecht",
+      "slug": "barendrecht"
+    },
+    {
+      "name": "Bodegraven-Reeuwijk",
+      "slug": "bodegraven-reeuwijk"
+    },
+    {
+      "name": "Brielle",
+      "slug": "brielle"
+    },
+    {
+      "name": "Capelle aan den IJssel",
+      "slug": "capelle-aan-den-ijssel"
+    },
+    {
+      "name": "Delft",
+      "slug": "delft"
+    },
+    {
+      "name": "Den Haag",
+      "slug": "den-haag"
+    },
+    {
+      "name": "Dordrecht",
+      "slug": "dordrecht"
+    },
+    {
+      "name": "Goeree-Overflakkee",
+      "slug": "goeree-overflakkee"
+    },
+    {
+      "name": "Gorinchem",
+      "slug": "gorinchem"
+    },
+    {
+      "name": "Gouda",
+      "slug": "gouda"
+    },
+    {
+      "name": "Hardinxveld-Giessendam",
+      "slug": "hardinxveld-giessendam"
+    },
+    {
+      "name": "Hellevoetsluis",
+      "slug": "hellevoetsluis"
+    },
+    {
+      "name": "Hendrik-Ido-Ambacht",
+      "slug": "hendrik-ido-ambacht"
+    },
+    {
+      "name": "Hillegom",
+      "slug": "hillegom"
+    },
+    {
+      "name": "Hoeksche Waard",
+      "slug": "hoeksche-waard"
+    },
+    {
+      "name": "Kaag en Braassem",
+      "slug": "kaag-en-braassem"
+    },
+    {
+      "name": "Katwijk",
+      "slug": "katwijk"
+    },
+    {
+      "name": "Krimpenerwaard",
+      "slug": "krimpenerwaard"
+    },
+    {
+      "name": "Lansingerland",
+      "slug": "lansingerland"
+    },
+    {
+      "name": "Leiden",
+      "slug": "leiden"
+    },
+    {
+      "name": "Leiderdorp",
+      "slug": "leiderdorp"
+    },
+    {
+      "name": "Leidschendam-Voorburg",
+      "slug": "leidschendam-voorburg"
+    },
+    {
+      "name": "Lisse",
+      "slug": "lisse"
+    },
+    {
+      "name": "Maassluis",
+      "slug": "maassluis"
+    },
+    {
+      "name": "Midden-Delfland",
+      "slug": "midden-delfland"
+    },
+    {
+      "name": "Molenlanden",
+      "slug": "molenlanden"
+    },
+    {
+      "name": "Nieuwkoop",
+      "slug": "nieuwkoop"
+    },
+    {
+      "name": "Noordwijk",
+      "slug": "noordwijk"
+    },
+    {
+      "name": "Oegstgeest",
+      "slug": "oegstgeest"
+    },
+    {
+      "name": "Papendrecht",
+      "slug": "papendrecht"
+    },
+    {
+      "name": "Pijnacker-Nootdorp",
+      "slug": "pijnacker-nootdorp"
+    },
+    {
+      "name": "Ridderkerk",
+      "slug": "ridderkerk"
+    },
+    {
+      "name": "Rijswijk",
+      "slug": "rijswijk"
+    },
+    {
+      "name": "Rotterdam",
+      "slug": "rotterdam"
+    },
+    {
+      "name": "Schiedam",
+      "slug": "schiedam"
+    },
+    {
+      "name": "Sliedrecht",
+      "slug": "sliedrecht"
+    },
+    {
+      "name": "Spijkenisse (Nissewaard)",
+      "slug": "spijkenisse"
+    },
+    {
+      "name": "Teylingen",
+      "slug": "teylingen"
+    },
+    {
+      "name": "Vlaardingen",
+      "slug": "vlaardingen"
+    },
+    {
+      "name": "Voorschoten",
+      "slug": "voorschoten"
+    },
+    {
+      "name": "Waddinxveen",
+      "slug": "waddinxveen"
+    },
+    {
+      "name": "Wassenaar",
+      "slug": "wassenaar"
+    },
+    {
+      "name": "Westland",
+      "slug": "westland"
+    },
+    {
+      "name": "Westvoorne",
+      "slug": "westvoorne"
+    },
+    {
+      "name": "Zoetermeer",
+      "slug": "zoetermeer"
+    },
+    {
+      "name": "Zuidplas",
+      "slug": "zuidplas"
+    },
+    {
+      "name": "Zwijndrecht",
+      "slug": "zwijndrecht"
+    }
+  ]
+}
