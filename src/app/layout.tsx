@@ -15,7 +15,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: {
+  title: {title: 'Sanibroyeur Service, Reparatie & Installatie | Sanibroyeur Techniek Nederland',
+  description: 'Last van een verstopte sanibroyeur of een defect? Sanibroyeur Techniek Nederland biedt snelle, vakkundige service, reparatie en installatie. Neem direct contact op!',
     default: `${siteConfig.name} - Uw Sanibroyeur Specialist`,
     template: `%s - ${siteConfig.name}`,
   },
