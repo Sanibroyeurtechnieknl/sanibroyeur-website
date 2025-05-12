@@ -6,15 +6,11 @@ import { siteConfig } from "@/lib/siteConfig";
 import { CheckCircle, Phone, MessageSquare, MapPin, Star } from "lucide-react";
 import ProminentCallButton from "@/components/ProminentCallButton";
 
-export const metadata: Metadata = {
-  title: 'Sanibroyeur Service, Reparatie & Installatie | Sanibroyeur Techniek Nederland', // Specifiek voor homepage
-  description: 'Last van een verstopte sanibroyeur of een defect? Sanibroyeur Techniek Nederland biedt snelle, vakkundige service, reparatie en installatie. Neem direct contact op!',
-
-// Placeholder data - replace with actual data fetching or static props
+// Data arrays - moved outside of metadata and component for clarity
 const blogPosts = [
   {
     title: "5 Tips om uw Sanibroyeur in Topconditie te Houden",
-    slug: "/blog/sanibroyeur-onderhoud-tips", // Example slug
+    slug: "/blog/sanibroyeur-onderhoud-tips",
     excerpt: "Leer hoe u met eenvoudig onderhoud de levensduur van uw Sanibroyeur kunt verlengen en problemen kunt voorkomen."
   },
   {
@@ -45,7 +41,7 @@ const reviews = [
 ];
 
 const commonProblems = [
-  { name: "Sanibroyeur verstopt", icon: <MapPin className="h-8 w-8 text-red-500" /> }, // Placeholder icon
+  { name: "Sanibroyeur verstopt", icon: <MapPin className="h-8 w-8 text-red-500" /> },
   { name: "Sanibroyeur maakt lawaai", icon: <MapPin className="h-8 w-8 text-red-500" /> },
   { name: "Sanibroyeur lekt water", icon: <MapPin className="h-8 w-8 text-red-500" /> },
   { name: "Sanibroyeur start niet", icon: <MapPin className="h-8 w-8 text-red-500" /> },
@@ -81,44 +77,44 @@ const servicesOverview = [
   {
     title: "Sanibroyeur Installatie",
     description: "Vakkundige installatie van alle merken en modellen Sanibroyeurs. Advies op maat en perfecte afwerking.",
-    image: "/images/service_installation.jpg", // Replace with actual image path
+    image: "/images/service_installation.jpg",
     link: "/diensten#installatie"
   },
   {
     title: "Sanibroyeur Reparatie",
     description: "Snelle en effectieve reparatie van alle Sanibroyeur storingen. 24/7 spoedservice beschikbaar.",
-    image: "/images/service_repair.jpg", // Replace with actual image path
+    image: "/images/service_repair.jpg",
     link: "/diensten#reparatie"
   },
   {
     title: "Sanibroyeur Onderhoud",
     description: "Preventief onderhoud voor een langere levensduur en optimale werking van uw Sanibroyeur.",
-    image: "/images/service_maintenance.jpg", // Replace with actual image path
+    image: "/images/service_maintenance.jpg",
     link: "/diensten#onderhoud"
   }
 ];
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} - Uw Expert in Sanibroyeur Installatie, Reparatie & Onderhoud`,
-  description: `Zoekt u een Sanibroyeur specialist? ${siteConfig.name} biedt snelle en vakkundige service in heel Nederland voor installatie, reparatie en onderhoud van uw Sanibroyeur. Bel nu voor hulp!`,
-  keywords: ["Sanibroyeur", "Sanibroyeur expert", "Sanibroyeur installatie", "Sanibroyeur reparatie", "Sanibroyeur onderhoud", "WC vermaler", "broyeur toilet", "loodgieter Sanibroyeur", siteConfig.name, "Nederland"],
+  title: 'Sanibroyeur Service, Reparatie & Installatie | Sanibroyeur Techniek Nederland',
+  description: 'Last van een verstopte sanibroyeur of een defect? Sanibroyeur Techniek Nederland biedt snelle, vakkundige service, reparatie en installatie. Neem direct contact op!',
+  keywords: ["Sanibroyeur", "Sanibroyeur expert", "Sanibroyeur installatie", "Sanibroyeur reparatie", "Sanibroyeur onderhoud", "WC vermaler", "broyeur toilet", "loodgieter Sanibroyeur", siteConfig.name, "Nederland", "homepage", "service"],
   alternates: {
-    canonical: siteConfig.url,
+    canonical: siteConfig.url, // Assuming homepage is the canonical URL for itself
   },
   openGraph: {
-    title: `${siteConfig.name} | Dé Sanibroyeur Specialist van Nederland`,
-    description: "Snelle, vakkundige hulp bij Sanibroyeur installatie, reparatie en onderhoud. Landelijke service.",
-    url: siteConfig.url,
+    title: 'Sanibroyeur Service, Reparatie & Installatie | Sanibroyeur Techniek Nederland',
+    description: "Direct hulp bij sanibroyeur problemen. Sanibroyeur Techniek Nederland: uw specialist voor snelle service, reparatie en installatie.",
+    url: siteConfig.url, // URL of the homepage
     images: [
       {
-        url: siteConfig.ogImage,
+        url: siteConfig.ogImage, // Use the general OG image, or a specific one for homepage if available
         width: 1200,
         height: 630,
-        alt: `${siteConfig.name} - Sanibroyeur Specialist`,
+        alt: 'Sanibroyeur Techniek Nederland - Homepage',
       },
     ],
   },
-};
+}; // CORRECTED: Properly closed metadata object and removed the second one.
 
 export default function HomePage() {
   return (

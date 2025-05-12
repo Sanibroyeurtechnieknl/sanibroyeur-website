@@ -12,6 +12,7 @@ import Script from "next/script"; // Added for JSON-LD
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
+}); // CORRECTED: Added closing parenthesis and semicolon
 
 // DIT IS DE NIEUWE, GECORRIGEERDE METADATA VOOR layout.tsx
 export const metadata: Metadata = {
@@ -91,12 +92,6 @@ export const metadata: Metadata = {
   },
 };
 // EINDE VAN HET NIEUWE METADATA BLOK
-
-
-
-
-
-
 
 export const viewport: Viewport = {
   themeColor: [
