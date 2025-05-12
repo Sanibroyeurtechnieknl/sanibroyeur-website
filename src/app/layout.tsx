@@ -13,8 +13,7 @@ const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 
-
-
+// DIT IS DE NIEUWE, GECORRIGEERDE METADATA VOOR layout.tsx
 export const metadata: Metadata = {
   // Basis SEO & Site Identificatie
   metadataBase: new URL(siteConfig.url),
@@ -37,7 +36,6 @@ export const metadata: Metadata = {
     "badkamer verbouwen",
     "Sanibroyeur Techniek NL",
     "Nederland",
-    // Voeg hier eventueel meer relevante trefwoorden toe
   ],
   authors: [{ name: siteConfig.name, url: siteConfig.url }],
   publisher: siteConfig.name,
@@ -49,49 +47,11 @@ export const metadata: Metadata = {
   // Favicons en App Icons (samengevoegd en gecorrigeerd)
   icons: {
     icon: '/icon.png', // Dit is het STN icoon dat ik u stuurde
-    shortcut: '/favicon.ico', // Als u ook een traditionele favicon.ico heeft/wilt
+    shortcut: '/favicon.ico', // Traditionele favicon, als u die heeft
     apple: '/apple-touch-icon.png', // Voor Apple apparaten
-    // U kunt hier eventueel nog andere formaten toevoegen, bijv. favicon-16x16.png
   },
 
-  // Open Graph (voor social media sharing, bijv. Facebook, LinkedIn)
-  openGraph: {
-    type: "website",
-    locale: "nl_NL",
-    url: siteConfig.url,
-    title: `${siteConfig.name} - Expert in Sanibroyeur Oplossingen`,
-    description: `Professionele installatie, snelle reparatie en grondig onderhoud van uw Sanibroyeur. ${siteConfig.name} staat voor u klaar!`,
-    images: [
-      {
-        url: siteConfig.ogImage, // Zorg dat dit pad correct is in uw siteConfig
-        width: 1200,
-        height: 630,
-        alt: `Logo van ${siteConfig.name} - Sanibroyeur Specialist`,
-      },
-    ],
-    siteName: siteConfig.name,
-  },
-
-  // Twitter Card (voor social media sharing op Twitter)
-  twitter: {
-    card: "summary_large_image",
-    title: `${siteConfig.name} - Top Sanibroyeur Service`,
-    description: `Hulp nodig met uw Sanibroyeur? ${siteConfig.name} biedt vakkundige installatie, reparatie en onderhoud. Bel ons nu!`,
-    images: [siteConfig.ogImage], // Zorg dat dit pad correct is in uw siteConfig
-    // U kunt hier eventueel nog twitter:site en twitter:creator toevoegen als u die heeft
-  },
-
-  // Robots meta tag voor zoekmachines
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-  metadataBase: new URL(siteConfig.url),
+  // Open Graph (voor social media sharing)
   openGraph: {
     type: "website",
     locale: "nl_NL",
@@ -108,18 +68,16 @@ export const metadata: Metadata = {
     ],
     siteName: siteConfig.name,
   },
+
+  // Twitter Card
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} - Top Sanibroyeur Service`,
     description: `Hulp nodig met uw Sanibroyeur? ${siteConfig.name} biedt vakkundige installatie, reparatie en onderhoud. Bel ons nu!`,
     images: [siteConfig.ogImage],
   },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
-  },
-  manifest: `${siteConfig.url}/site.webmanifest`,
+
+  // Robots meta tag
   robots: {
     index: true,
     follow: true,
@@ -131,12 +89,14 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  authors: [{ name: siteConfig.name, url: siteConfig.url }],
-  publisher: siteConfig.name,
-  alternates: {
-    canonical: siteConfig.url,
-  },
 };
+// EINDE VAN HET NIEUWE METADATA BLOK
+
+
+
+
+
+
 
 export const viewport: Viewport = {
   themeColor: [
