@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Sanibroyeur Techniek NL",
-  url: "https://www.sanibroyeurtechnieknederland.nl", // Assuming this base URL is still desired
-  ogImage: "https://www.sanibroyeurtechnieknederland.nl/og.jpg", // Assuming this OG image is still desired
+  url: "https://sanibroyeurtechnieknederland.nl", // Assuming this base URL is still desired
+  ogImage: "https://sanibroyeurtechnieknederland.nl/og.jpg", // Assuming this OG image is still desired
   description: "Uw expert in Sanibroyeur installatie, onderhoud en reparatie in Nederland. Snelle service en vakmanschap voor alle typen broyeur toiletten en wc vermalers. Specialist in Noord-Holland, Zuid-Holland, Utrecht, Flevoland, Gelderland en Overijssel.",
   links: {
     // twitter: "https://twitter.com/sanibroyeurtechnieknl", // Assuming twitter is also to be removed or updated
