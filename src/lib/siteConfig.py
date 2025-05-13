@@ -1,7 +1,7 @@
 siteConfig = {
   "name": "Sanibroyeur Techniek NL",
-  "url": "https://www.sanibroyeurtechniek.nl",
-  "ogImage": "https://www.sanibroyeurtechniek.nl/og.jpg",
+  "url": "https://www.sanibroyeurtechnieknederland.nl",
+  "ogImage": "https://www.sanibroyeurtechnieknederland.nl/og.jpg",
   "description": "Uw expert in Sanibroyeur installatie, onderhoud en reparatie in Nederland. Snelle service en vakmanschap voor alle typen broyeur toiletten en wc vermalers. Specialist in Noord-Holland, Zuid-Holland, Utrecht, Flevoland, Gelderland en Overijssel.",
   "links": {
     "twitter": "https://twitter.com/sanibroyeurtechnieknl",
