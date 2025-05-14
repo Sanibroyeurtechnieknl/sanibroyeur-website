@@ -34,3 +34,15 @@ export const createSlug = (name: string): string => {
     .replace(/[^a-z0-9-]/gi, ""); // Remove any remaining non-alphanumeric characters except hyphens
 };
 
+// src/lib/utils.ts
+export function slugify(text: string): string {
+  if (!text) return '';
+  return text
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-') // Vervang spaties door -
+    .replace(/[^
+a-z0-9-]/g, '') // Verwijder ongeldige tekens
+    .replace(/-+/g, '-'); // Vervang meerdere - door enkele -
+}
