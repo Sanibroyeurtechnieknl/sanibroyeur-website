@@ -41,8 +41,7 @@ export function slugify(text: string): string {
     .toString()
     .toLowerCase()
     .trim()
-    .replace(/\s+/g, '-') // Vervang spaties door -
-    .replace(/[^
-a-z0-9-]/g, '') // Verwijder ongeldige tekens
-    .replace(/-+/g, '-'); // Vervang meerdere - door enkele -
+    .replace(/\s+/g, '-')       // Vervang spaties door -
+    .replace(/[^a-z0-9-]/g, '') // Verwijder ongeldige tekens (HIER IS DE CORRECTIE)
+    .replace(/-+/g, '-');      // Vervang meerdere - door enkele -
 }
