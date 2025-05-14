@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/siteConfig";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
-import FloatingCallButton from "@/components/FloatingCallButton";
+import FloatingActionButtons from "@/components/FloatingActionButtons";
 import Script from "next/script"; // Added for JSON-LD
 
 const fontSans = FontSans({
@@ -193,7 +193,7 @@ export default function RootLayout({
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
-            <FloatingCallButton />
+            <FloatingActionButtons />
           </div>
         </ThemeProvider>
       </body>
