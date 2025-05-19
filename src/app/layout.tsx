@@ -45,12 +45,11 @@ export const metadata: Metadata = {
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
 
-  // Favicons en App Icons (samengevoegd en gecorrigeerd)
   icons: {
-    icon: '/icon.png', // Dit is het STN icoon dat ik u stuurde
-    shortcut: '/favicon.ico', // Traditionele favicon, als u die heeft
-    apple: '/apple-touch-icon.png', // Voor Apple apparaten
-  },
+  icon: '/stn_favicon.png',
+  shortcut: '/stn_favicon.ico',
+  apple: '/stn_apple_touch_icon.png',
+},
 
   // Open Graph (voor social media sharing)
   openGraph: {
