@@ -1,8 +1,8 @@
 import React from 'react';
 
 const FloatingActionButtons = () => {
-  const phoneNumber = "+31686460637";
-  const whatsAppNumber = "31686460637"; // Format for wa.me link
+  const phoneNumber = "085-2033172";
+  const whatsAppNumber = "31852033172"; // Format for wa.me link
 
   return (
     <div className="fixed bottom-4 right-4 flex flex-col space-y-3 z-50">
