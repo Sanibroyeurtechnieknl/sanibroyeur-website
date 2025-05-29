@@ -8,7 +8,7 @@ export const siteConfig = {
     // github: "https://github.com/manusnijhoff", // Assuming this is a dev link and should be removed for production
   },
   contactInfo: {
-    telefoon: "0852033172", // Standardized format
+    telefoon: "085-2033172", // Standardized format
     email: "sanibroyeurtechnieknederland@gmail.com", // Corrected email
     kvk: "94344833",
     btw: "NL005078347B89",
