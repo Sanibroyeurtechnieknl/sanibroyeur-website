@@ -26,7 +26,7 @@ export default function WerkgebiedenOverzichtPage() {
 
   return (
     <main className="flex-1 bg-background">
-      <ProminentCallButton phoneNumber="0686460637" />
+      <ProminentCallButton phoneNumber="0852033172" />
       <section className="bg-secondary text-foreground py-12 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl font-bold text-primary mb-4">

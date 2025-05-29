@@ -65,7 +65,7 @@ const BlogPage: React.FC = () => {
 
       {/* Prominent Call Button - Bottom of page */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-8 border-t border-border">
-        <ProminentCallButton phoneNumber={siteConfig.contactInfo.telefoon || "0686460637"} buttonText={`Direct Advies Nodig? Bel Ons!`}/>
+        <ProminentCallButton phoneNumber={siteConfig.contactInfo.telefoon || "0852033172"} buttonText={`Direct Advies Nodig? Bel Ons!`}/>
       </div>
     </main>
   );
