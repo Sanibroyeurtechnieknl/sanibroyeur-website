@@ -22,8 +22,8 @@ siteConfig = {
   ],
   "kvk": "94344833",
   "btw": "NL005078347B89",
-  "telefoon": "06-12345678",
-  "email": "info@sanibroyeurtechniek.nl",
+  "telefoon": "0852033172",
+  "email": "sanibroyeurtechnieknederland@gmail.com",
   "adres": {
     "straat": "Lochemseweg 7",
     "postcode": "7475PA",
