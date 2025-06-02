@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toilet Loopt Over Zuid-Holland | Kies Uw Stad | Sanibroyeur Techniek Nederland</title>
+    <meta name="description" content="Toilet Loopt Over in Zuid-Holland. 35 steden beschikbaar. Aanrijtijd 25-50 min. Bel 085-2033172 voor snelle service.">
+    <meta name="keywords" content="toilet loopt over, zuid-holland, rotterdam, den haag, leiden, dordrecht, zoetermeer, alphen aan den rijn, delft, spijkenisse, capelle aan den ijssel, gouda, rijswijk, voorburg, leidschendam, wassenaar, barendrecht, krimpen aan den ijssel, nieuwkoop, waddinxveen, bodegraven, katwijk, noordwijk, sassenheim, lisse, hillegom, voorhout, oegstgeest, rijnsburg, monster, naaldwijk, maassluis, vlaardingen, schiedam, hellevoetsluis, brielle, ridderkerk">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        .header {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .header h1 { font-size: 3rem; font-weight: bold; margin-bottom: 20px; }
+        .header p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+        
+        .breadcrumb {
+            background: #f8fafc;
+            padding: 15px 0;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        
+        .cities-section {
+            padding: 60px 0;
+        }
+        
+        .cities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .city-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .city-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .city-card.popular {
+            border: 2px solid #fbbf24;
+            position: relative;
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: -10px;
+            right: 10px;
+            background: #fbbf24;
+            color: #92400e;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+        
+        .city-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 5px;
+        }
+        
+        .city-stats {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .city-button {
+            width: 100%;
+            background: #2563eb;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            transition: background 0.3s;
+        }
+        
+        .city-button:hover {
+            background: #1d4ed8;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #1e40af;
+            margin: 40px 0 20px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title::before {
+            content: '';
+            width: 30px;
+            height: 3px;
+            background: #2563eb;
+            margin-right: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2rem; }
+            .cities-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav>
+                <a href="../../">Diensten</a> › 
+                <a href="../">Toilet Loopt Over</a> › 
+                <span>Zuid-Holland</span>
+            </nav>
+        </div>
+    </section>
+    
+    <!-- Header -->
+    <section class="header">
+        <div class="container">
+            <h1>Toilet Loopt Over<br><span style="color: #fbbf24;">Zuid-Holland</span></h1>
+            <p>Kies uw stad voor lokale service informatie en directe hulp</p>
+        </div>
+    </section>
+    
+    <!-- Cities -->
+    <section class="cities-section">
+        <div class="container">
+            
+                <h2 class="section-title">🌟 Populaire Steden</h2>
+                <div class="cities-grid">
+                    
+                        <div class="city-card popular">
+                            <div class="popular-badge">POPULAIR</div>
+                            <div class="city-name">Rotterdam</div>
+                            <div class="city-stats">
+                                👥 651,000 inwoners<br>
+                                ⏱️ Aanrijtijd: 30 min
+                            </div>
+                            <a href="rotterdam.html" class="city-button">
+                                Bekijk Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card popular">
+                            <div class="popular-badge">POPULAIR</div>
+                            <div class="city-name">Den Haag</div>
+                            <div class="city-stats">
+                                👥 548,000 inwoners<br>
+                                ⏱️ Aanrijtijd: 35 min
+                            </div>
+                            <a href="den-haag.html" class="city-button">
+                                Bekijk Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card popular">
+                            <div class="popular-badge">POPULAIR</div>
+                            <div class="city-name">Leiden</div>
+                            <div class="city-stats">
+                                👥 125,000 inwoners<br>
+                                ⏱️ Aanrijtijd: 40 min
+                            </div>
+                            <a href="leiden.html" class="city-button">
+                                Bekijk Service Info →
+                            </a>
+                        </div>
+                    
+                </div>
+            
+            
+            
+                <h2 class="section-title">📍 Overige Steden</h2>
+                <div class="cities-grid">
+                    
+                        <div class="city-card">
+                            <div class="city-name">Dordrecht</div>
+                            <div class="city-stats">
+                                👥 119,000 inwoners<br>
+                                ⏱️ 35 min
+                            </div>
+                            <a href="dordrecht.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Zoetermeer</div>
+                            <div class="city-stats">
+                                👥 125,000 inwoners<br>
+                                ⏱️ 40 min
+                            </div>
+                            <a href="zoetermeer.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Alphen aan den Rijn</div>
+                            <div class="city-stats">
+                                👥 111,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="alphen-aan-den-rijn.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Delft</div>
+                            <div class="city-stats">
+                                👥 103,000 inwoners<br>
+                                ⏱️ 35 min
+                            </div>
+                            <a href="delft.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Spijkenisse</div>
+                            <div class="city-stats">
+                                👥 74,000 inwoners<br>
+                                ⏱️ 35 min
+                            </div>
+                            <a href="spijkenisse.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Capelle aan den IJssel</div>
+                            <div class="city-stats">
+                                👥 67,000 inwoners<br>
+                                ⏱️ 30 min
+                            </div>
+                            <a href="capelle-aan-den-ijssel.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Gouda</div>
+                            <div class="city-stats">
+                                👥 73,000 inwoners<br>
+                                ⏱️ 40 min
+                            </div>
+                            <a href="gouda.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Rijswijk</div>
+                            <div class="city-stats">
+                                👥 54,000 inwoners<br>
+                                ⏱️ 35 min
+                            </div>
+                            <a href="rijswijk.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Voorburg</div>
+                            <div class="city-stats">
+                                👥 39,000 inwoners<br>
+                                ⏱️ 35 min
+                            </div>
+                            <a href="voorburg.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Leidschendam</div>
+                            <div class="city-stats">
+                                👥 27,000 inwoners<br>
+                                ⏱️ 40 min
+                            </div>
+                            <a href="leidschendam.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Wassenaar</div>
+                            <div class="city-stats">
+                                👥 26,000 inwoners<br>
+                                ⏱️ 40 min
+                            </div>
+                            <a href="wassenaar.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Barendrecht</div>
+                            <div class="city-stats">
+                                👥 48,000 inwoners<br>
+                                ⏱️ 35 min
+                            </div>
+                            <a href="barendrecht.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Krimpen aan den IJssel</div>
+                            <div class="city-stats">
+                                👥 29,000 inwoners<br>
+                                ⏱️ 35 min
+                            </div>
+                            <a href="krimpen-aan-den-ijssel.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Nieuwkoop</div>
+                            <div class="city-stats">
+                                👥 28,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="nieuwkoop.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Waddinxveen</div>
+                            <div class="city-stats">
+                                👥 29,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="waddinxveen.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Bodegraven</div>
+                            <div class="city-stats">
+                                👥 20,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="bodegraven.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Katwijk</div>
+                            <div class="city-stats">
+                                👥 65,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="katwijk.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Noordwijk</div>
+                            <div class="city-stats">
+                                👥 43,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="noordwijk.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Sassenheim</div>
+                            <div class="city-stats">
+                                👥 15,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="sassenheim.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Lisse</div>
+                            <div class="city-stats">
+                                👥 23,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="lisse.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Hillegom</div>
+                            <div class="city-stats">
+                                👥 22,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="hillegom.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Voorhout</div>
+                            <div class="city-stats">
+                                👥 15,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="voorhout.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Oegstgeest</div>
+                            <div class="city-stats">
+                                👥 24,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="oegstgeest.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Rijnsburg</div>
+                            <div class="city-stats">
+                                👥 15,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="rijnsburg.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Monster</div>
+                            <div class="city-stats">
+                                👥 13,000 inwoners<br>
+                                ⏱️ 40 min
+                            </div>
+                            <a href="monster.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Naaldwijk</div>
+                            <div class="city-stats">
+                                👥 18,000 inwoners<br>
+                                ⏱️ 40 min
+                            </div>
+                            <a href="naaldwijk.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Maassluis</div>
+                            <div class="city-stats">
+                                👥 33,000 inwoners<br>
+                                ⏱️ 35 min
+                            </div>
+                            <a href="maassluis.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Vlaardingen</div>
+                            <div class="city-stats">
+                                👥 73,000 inwoners<br>
+                                ⏱️ 30 min
+                            </div>
+                            <a href="vlaardingen.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Schiedam</div>
+                            <div class="city-stats">
+                                👥 78,000 inwoners<br>
+                                ⏱️ 30 min
+                            </div>
+                            <a href="schiedam.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Hellevoetsluis</div>
+                            <div class="city-stats">
+                                👥 40,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="hellevoetsluis.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Brielle</div>
+                            <div class="city-stats">
+                                👥 17,000 inwoners<br>
+                                ⏱️ 45 min
+                            </div>
+                            <a href="brielle.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                        <div class="city-card">
+                            <div class="city-name">Ridderkerk</div>
+                            <div class="city-stats">
+                                👥 46,000 inwoners<br>
+                                ⏱️ 35 min
+                            </div>
+                            <a href="ridderkerk.html" class="city-button">
+                                Service Info →
+                            </a>
+                        </div>
+                    
+                </div>
+            
+        </div>
+    </section>
+</body>
+</html>
