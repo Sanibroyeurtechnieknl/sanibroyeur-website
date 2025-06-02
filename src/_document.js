@@ -14,3 +14,4 @@ export default function Document() {
     </Html>
   )
 }
+<Script src="/sanibroyeur-diensten/integratie.js" />
