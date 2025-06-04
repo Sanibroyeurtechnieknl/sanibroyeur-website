@@ -9,14 +9,13 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const footerNavLinks = [
-    { href: "/", label: "Home", icon: <HomeIcon className="h-4 w-4 mr-2" /> },
-       { href: "/werkgebieden", label: "Werkgebieden", icon: <MapIcon className="h-4 w-4 mr-2" /> },{ href: "/diensten/", label: "Diensten", icon: <WrenchIcon className="h-4 w-4 mr-2" /> }
-    // { href: "/over-ons", label: "Over Ons", icon: <UsersIcon className="h-4 w-4 mr-2" /> }, // Assuming Over Ons might not be a priority page for now
-    { href: "/faq", label: "FAQ", icon: <MessageCircleQuestionIcon className="h-4 w-4 mr-2" /> },
-    { href: "/blog", label: "Blog", icon: <NewspaperIcon className="h-4 w-4 mr-2" /> },
-    { href: "/contact", label: "Contact", icon: <Mail className="h-4 w-4 mr-2" /> },
-  ];
-
+  { href: "/", label: "Home", icon: <HomeIcon className="h-4 w-4 mr-2" /> },
+  { href: "/diensten/", label: "Diensten", icon: <WrenchIcon className="h-4 w-4 mr-2" /> },
+  { href: "/werkgebieden", label: "Werkgebieden", icon: <MapIcon className="h-4 w-4 mr-2" /> }, // ← KOMMA HIER!
+  { href: "/faq", label: "FAQ", icon: <MessageCircleQuestionIcon className="h-4 w-4 mr-2" /> },
+  { href: "/blog", label: "Blog", icon: <NewspaperIcon className="h-4 w-4 mr-2" /> },
+  { href: "/contact", label: "Contact", icon: <Mail className="h-4 w-4 mr-2" /> },
+];
   return (
     <footer className="bg-slate-900 dark:bg-black text-gray-300 dark:text-gray-400 pt-16 pb-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
