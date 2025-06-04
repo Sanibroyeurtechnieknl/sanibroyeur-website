@@ -35,8 +35,7 @@ export function Header() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/sanibroyeur-diensten-production/sanibroyeur-diensten/diensten.html", label: "Diensten" },
-    { href: "/werkgebieden", label: "Werkgebieden" },
+   { href: "/diensten/", label: "Diensten" }    { href: "/werkgebieden", label: "Werkgebieden" },
     { href: "/over-ons", label: "Over Ons" },
     { href: "/blog", label: "Blog" },
     { href: "/faq", label: "FAQ" },

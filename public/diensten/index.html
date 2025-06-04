@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alle Sanibroyeur Diensten | Sanibroyeur Techniek Nederland</title>
+    <meta name="description" content="Alle sanibroyeur diensten in heel Nederland. Van acute problemen tot preventief onderhoud. Professionele service in uw regio. Bel 085-2033172.">
+    <meta name="keywords" content="sanibroyeur diensten, nederland, reparatie, installatie, onderhoud, spoeddienst, verstopt, lekt">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Alle Sanibroyeur Diensten | Sanibroyeur Techniek Nederland">
+    <meta property="og:description" content="Professionele sanibroyeur diensten in heel Nederland. Van acute problemen tot preventief onderhoud.">
+    <meta property="og:type" content="website">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Sanibroyeur Diensten Nederland",
+        "description": "Complete sanibroyeur dienstverlening in heel Nederland",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Sanibroyeur Techniek Nederland",
+            "telephone": "085-2033172",
+            "email": "sanibroyeurtechnieknederland@gmail.com"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Nederland"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8fafc;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Navigation - zelfde als hoofdpagina */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2563eb;
+            text-decoration: none;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: #374151;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            color: #2563eb;
+        }
+        
+        .nav-phone {
+            background: #2563eb;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-phone:hover {
+            background: #1d4ed8;
+        }
+        
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Services Section */
+        .services-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #6b7280;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Service Categories */
+        .service-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .category {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        
+        .category h3 {
+            font-size: 1.5rem;
+            color: #1f2937;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .category-icon {
+            font-size: 1.8rem;
+        }
+        
+        .service-list {
+            display: grid;
+            gap: 10px;
+        }
+        
+        .service-item {
+            display: block;
+            padding: 12px 15px;
+            background: #f8fafc;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #374151;
+            transition: all 0.3s;
+            border-left: 4px solid transparent;
+        }
+        
+        .service-item:hover {
+            background: #e0f2fe;
+            border-left-color: #2563eb;
+            color: #1f2937;
+            transform: translateX(5px);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: #1f2937;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-text {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #059669;
+        }
+        
+        /* Floating Contact Buttons */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+        
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .btn-phone {
+            background: #10b981;
+        }
+        
+        .btn-whatsapp {
+            background: #25d366;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .service-categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .floating-contact {
+                right: 15px;
+                bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Sanibroyeur Techniek NL</a>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/diensten">Diensten</a></li>
+                <li><a href="/#werkgebieden">Werkgebieden</a></li>
+                <li><a href="/#over-ons">Over Ons</a></li>
+                <li><a href="/#blog">Blog</a></li>
+                <li><a href="/#faq">FAQ</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <a href="tel:085-2033172" class="nav-phone">085-2033172</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="header">
+        <div class="container">
+            <h1>Alle Sanibroyeur Diensten</h1>
+            <p>Professionele sanibroyeur service in heel Nederland. Van acute problemen tot preventief onderhoud - wij staan voor u klaar.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Kies Uw Sanibroyeur Service</h2>
+            <p class="section-subtitle">Elke dienst beschikbaar in alle provincies en steden van Nederland voor maximale lokale dekking.</p>
+            
+            <div class="service-categories">
+                <!-- Problemen & Symptomen -->
+                <div class="category">
+                    <h3><span class="category-icon">🔧</span> Problemen & Symptomen</h3>
+                    <div class="service-list">
+                        <a href="/diensten/sanibroyeur-verstopt/" class="service-item">Sanibroyeur Verstopt</a>
+                        <a href="/diensten/sanibroyeur-lekt/" class="service-item">Sanibroyeur Lekt</a>
+                        <a href="/diensten/sanibroyeur-werkt-niet/" class="service-item">Sanibroyeur Werkt Niet</a>
+                        <a href="/diensten/sanibroyeur-start-niet/" class="service-item">Sanibroyeur Start Niet</a>
+                        <a href="/diensten/sanibroyeur-maakt-lawaai/" class="service-item">Sanibroyeur Maakt Lawaai</a>
+                        <a href="/diensten/sanibroyeur-stinkt/" class="service-item">Sanibroyeur Stinkt</a>
+                    </div>
+                </div>
+
+                <!-- Technische Symptomen -->
+                <div class="category">
+                    <h3><span class="category-icon">⚙️</span> Technische Symptomen</h3>
+                    <div class="service-list">
+                        <a href="/diensten/sanibroyeur-rood-lampje/" class="service-item">Sanibroyeur Rood Lampje</a>
+                        <a href="/diensten/sanibroyeur-motor-problemen/" class="service-item">Sanibroyeur Motor Problemen</a>
+                        <a href="/diensten/sanibroyeur-blijft-draaien/" class="service-item">Sanibroyeur Blijft Draaien</a>
+                        <a href="/diensten/sanibroyeur-zoemt-maar-pompt-niet/" class="service-item">Zoemt Maar Pompt Niet</a>
+                        <a href="/diensten/sanibroyeur-slaat-steeds-af/" class="service-item">Slaat Steeds Af</a>
+                        <a href="/diensten/sanibroyeur-toilet-loopt-over/" class="service-item">Toilet Loopt Over</a>
+                    </div>
+                </div>
+
+                <!-- Service Diensten -->
+                <div class="category">
+                    <h3><span class="category-icon">🛠️</span> Service Diensten</h3>
+                    <div class="service-list">
+                        <a href="/diensten/sanibroyeur-reparatie/" class="service-item">Sanibroyeur Reparatie</a>
+                        <a href="/diensten/sanibroyeur-installatie/" class="service-item">Sanibroyeur Installatie</a>
+                        <a href="/diensten/sanibroyeur-onderhoud/" class="service-item">Sanibroyeur Onderhoud</a>
+                        <a href="/diensten/sanibroyeur-ontstopping/" class="service-item">Sanibroyeur Ontstopping</a>
+                        <a href="/diensten/sanibroyeur-vervanging/" class="service-item">Sanibroyeur Vervanging</a>
+                        <a href="/diensten/sanibroyeur-spoeddienst/" class="service-item">Sanibroyeur Spoeddienst</a>
+                    </div>
+                </div>
+
+                <!-- Spoed Services -->
+                <div class="category">
+                    <h3><span class="category-icon">⚡</span> Spoed Services</h3>
+                    <div class="service-list">
+                        <a href="/diensten/sanibroyeur-24-uur-service/" class="service-item">24 Uur Service</a>
+                        <a href="/diensten/sanibroyeur-weekend-service/" class="service-item">Weekend Service</a>
+                        <a href="/diensten/sanibroyeur-avond-service/" class="service-item">Avond Service</a>
+                    </div>
+                </div>
+
+                <!-- Locatie Services -->
+                <div class="category">
+                    <h3><span class="category-icon">🏠</span> Locatie Services</h3>
+                    <div class="service-list">
+                        <a href="/diensten/sanibroyeur-kelder-installatie/" class="service-item">Kelder Installatie</a>
+                        <a href="/diensten/sanibroyeur-toilet-installatie/" class="service-item">Toilet Installatie</a>
+                        <a href="/diensten/sanibroyeur-badkamer-service/" class="service-item">Badkamer Service</a>
+                        <a href="/diensten/sanibroyeur-kantoor-installatie/" class="service-item">Kantoor Installatie</a>
+                    </div>
+                </div>
+
+                <!-- Merk Services -->
+                <div class="category">
+                    <h3><span class="category-icon">🏷️</span> Merk Specialisten</h3>
+                    <div class="service-list">
+                        <a href="/diensten/sfa-sanibroyeur/" class="service-item">SFA Sanibroyeur</a>
+                        <a href="/diensten/grundfos-sanibroyeur/" class="service-item">Grundfos Sanibroyeur</a>
+                        <a href="/diensten/saniflo-sanibroyeur/" class="service-item">Saniflo Sanibroyeur</a>
+                        <a href="/diensten/dab-sanibroyeur/" class="service-item">DAB Sanibroyeur</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Klaar om uw Sanibroyeur-problemen op te lossen?</h2>
+            <p class="cta-text">Wacht niet langer! Bel Sanibroyeur Techniek NL nu voor direct advies of een afspraak!</p>
+            <a href="tel:085-2033172" class="cta-button">📞 Bel Nu: 085-2033172</a>
+        </div>
+    </section>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <a href="tel:085-2033172" class="floating-btn btn-phone" title="Bel ons direct">📞</a>
+        <a href="https://wa.me/31852033172" class="floating-btn btn-whatsapp" title="Chat met ons op WhatsApp">💬</a>
+    </div>
+</body>
+</html>
+

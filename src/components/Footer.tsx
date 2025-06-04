@@ -10,7 +10,7 @@ export function Footer() {
 
   const footerNavLinks = [
     { href: "/", label: "Home", icon: <HomeIcon className="h-4 w-4 mr-2" /> },
-       { href: "/werkgebieden", label: "Werkgebieden", icon: <MapIcon className="h-4 w-4 mr-2" /> },{ href: "/sanibroyeur-diensten-production/sanibroyeur-diensten/diensten.html", label: "Diensten", icon: <WrenchIcon className="h-4 w-4 mr-2" /> },
+       { href: "/werkgebieden", label: "Werkgebieden", icon: <MapIcon className="h-4 w-4 mr-2" /> },{ href: "/diensten/", label: "Diensten", icon: <WrenchIcon className="h-4 w-4 mr-2" /> }
     // { href: "/over-ons", label: "Over Ons", icon: <UsersIcon className="h-4 w-4 mr-2" /> }, // Assuming Over Ons might not be a priority page for now
     { href: "/faq", label: "FAQ", icon: <MessageCircleQuestionIcon className="h-4 w-4 mr-2" /> },
     { href: "/blog", label: "Blog", icon: <NewspaperIcon className="h-4 w-4 mr-2" /> },
