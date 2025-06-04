@@ -34,13 +34,14 @@ export function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   const navLinks = [
-    { href: "/", label: "Home" },
-   { href: "/diensten/", label: "Diensten" }    { href: "/werkgebieden", label: "Werkgebieden" },
-    { href: "/over-ons", label: "Over Ons" },
-    { href: "/blog", label: "Blog" },
-    { href: "/faq", label: "FAQ" },
-    { href: "/contact", label: "Contact" },
-  ];
+  { href: "/", label: "Home" },
+  { href: "/diensten/", label: "Diensten" }, // ← KOMMA HIER!
+  { href: "/werkgebieden", label: "Werkgebieden" },
+  { href: "/over-ons", label: "Over Ons" },
+  { href: "/blog", label: "Blog" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/contact", label: "Contact" },
+];
 
   return (
     <header
