@@ -72,7 +72,7 @@ importers:
         specifier: ^1.2.2
         version: 1.2.4(@types/react-dom@18.3.7(@types/react@18.3.21))(@types/react@18.3.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-slot':
-        specifier: ^1.1.1
+        specifier: ^1.2.0
         version: 1.2.0(@types/react@18.3.21)(react@18.3.1)
       '@radix-ui/react-switch':
         specifier: ^1.1.2
@@ -169,13 +169,13 @@ importers:
         specifier: ^0.3.8
         version: 0.3.10(wrangler@3.114.4(@cloudflare/workers-types@4.20250409.0))
       '@types/node':
-        specifier: ^20
+        specifier: ^20.17.30
         version: 20.17.30
       '@types/react':
-        specifier: ^18.0.0
+        specifier: ^18.3.21
         version: 18.3.21
       '@types/react-dom':
-        specifier: ^18.0.0
+        specifier: ^18.3.7
         version: 18.3.7(@types/react@18.3.21)
       eslint:
         specifier: ^9
