@@ -5,614 +5,279 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alle Sanibroyeur Diensten | Sanibroyeur Techniek Nederland</title>
     <meta name="description" content="Alle sanibroyeur diensten in heel Nederland. Van acute problemen tot preventief onderhoud. Professionele service in uw regio. Bel 085-2033172.">
+    <meta name="keywords" content="sanibroyeur diensten, nederland, reparatie, installatie, onderhoud, spoeddienst, verstopt, lekt">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#f8fafc',
+                        'secondary-foreground': '#1f2937',
+                        background: '#ffffff',
+                        foreground: '#1f2937'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        /* Custom styles to match homepage exactly */
+        .hover-scale {
+            transition: transform 0.3s ease;
         }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f8fafc;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header Navigation - Simple text links like homepage */
-        .navbar {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2563eb;
-            text-decoration: none;
-        }
-        
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-        
-        /* Simple text navigation - NO colored backgrounds */
-        .nav-menu li a {
-            text-decoration: none;
-            color: rgba(54, 61, 73, 0.8) !important;
-            font-weight: 500;
-            transition: color 0.3s;
-            background: transparent !important;
-            padding: 0 !important;
-            border: none !important;
-            border-radius: 0 !important;
-        }
-        
-        .nav-menu li a:hover {
-            color: #2563eb !important;
-        }
-        
-        /* Only phone button has background */
-        .nav-phone {
-            background: rgb(51, 128, 204);
-            color: rgb(255, 255, 255);
-            padding: 0px 12px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .nav-phone:hover {
-            background: #1d4ed8;
-        }
-        
-        /* Header Section */
-        .header {
-            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        
-        .header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto 40px auto;
-        }
-        
-        /* Call Buttons - EXACT from homepage */
-        .hero-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 40px;
-        }
-        
-        /* Green Button */
-        .btn-green {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgb(34, 197, 94);
-            color: rgb(255, 255, 255);
-            padding: 12px 32px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 18px;
-            border: 0px solid rgb(218, 224, 231);
-            transition: all 0.3s ease;
-        }
-        
-        .btn-green:hover {
-            background: rgb(22, 163, 74);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(34, 197, 94, 0.3);
-        }
-        
-        /* Blue Button */
-        .btn-blue {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgb(59, 130, 246);
-            color: rgb(255, 255, 255);
-            padding: 12px 32px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 18px;
-            border: 0px solid rgb(218, 224, 231);
-            transition: all 0.3s ease;
-        }
-        
-        .btn-blue:hover {
-            background: rgb(37, 99, 235);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
-        }
-        
-        /* Services Section */
-        .services-section {
-            padding: 80px 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            color: #1f2937;
-            margin-bottom: 20px;
-        }
-        
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #6b7280;
-            margin-bottom: 60px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        /* Service Categories */
-        .service-categories {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-bottom: 60px;
-        }
-        
-        .category {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .category:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-        }
-        
-        .category h3 {
-            font-size: 1.5rem;
-            color: #1f2937;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .category-icon {
-            font-size: 1.8rem;
-        }
-        
-        .service-list {
-            display: grid;
-            gap: 10px;
-        }
-        
-        .service-item {
-            display: block;
-            padding: 12px 15px;
-            background: #f8fafc;
-            border-radius: 8px;
-            text-decoration: none;
-            color: #374151;
-            transition: all 0.3s;
-            border-left: 4px solid transparent;
-        }
-        
-        .service-item:hover {
-            background: #e0f2fe;
-            border-left-color: #2563eb;
-            color: #1f2937;
-            transform: translateX(5px);
-        }
-        
-        /* Footer */
-        .footer {
-            background: #1f2937;
-            color: white;
-            padding: 60px 0 20px 0;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-section h3 {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-            color: #f9fafb;
-        }
-        
-        .footer-section p {
-            color: #d1d5db;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        
-        /* Blue footer navigation */
-        .footer-nav {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        
-        .footer-nav li a {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 16px;
-            border-radius: 6px;
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            transition: all 0.3s;
-            background: #2563eb;
-        }
-        
-        .footer-nav li a:hover {
-            background: #1d4ed8;
-            transform: translateX(4px);
-        }
-        
-        /* Contact Info */
-        .contact-info {
-            color: #d1d5db;
-        }
-        
-        .contact-info p {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .contact-info a {
-            color: #10b981;
-            text-decoration: none;
-        }
-        
-        .contact-info a:hover {
-            color: #059669;
-        }
-        
-        /* Legal links */
-        .legal-section {
-            margin-top: 30px;
-        }
-        
-        .legal-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 20px;
-        }
-        
-        .legal-links a {
-            color: #10b981;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 8px 16px;
-            border-radius: 6px;
-            transition: all 0.3s;
-        }
-        
-        .legal-links a:hover {
-            background: #374151;
-            color: #059669;
-        }
-        
-        .footer-bottom {
-            border-top: 1px solid #374151;
-            padding-top: 20px;
-            text-align: center;
-            color: #9ca3af;
-        }
-        
-        /* Direct Contact Button */
-        .footer-cta {
-            background: rgb(34, 197, 94);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-block;
-            margin-top: 15px;
-            transition: all 0.3s;
-        }
-        
-        .footer-cta:hover {
-            background: rgb(22, 163, 74);
-            transform: translateY(-2px);
-        }
-        
-        /* Floating Contact Buttons */
-        .floating-contact {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            z-index: 1000;
-        }
-        
-        .floating-btn {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            font-size: 1.5rem;
-            color: white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            transition: transform 0.3s;
-        }
-        
-        .floating-btn:hover {
-            transform: scale(1.1);
-        }
-        
-        .btn-phone {
-            background: rgb(34, 197, 94);
-        }
-        
-        .btn-whatsapp {
-            background: #25d366;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-            
-            .header h1 {
-                font-size: 2rem;
-            }
-            
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .service-categories {
-                grid-template-columns: 1fr;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-            
-            .legal-links {
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-            }
-            
-            .floating-contact {
-                right: 15px;
-                bottom: 15px;
-            }
+        .hover-scale:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
-<body>
-    <!-- Navigation - Simple text links -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="/" class="logo">Sanibroyeur Techniek NL</a>
-            <ul class="nav-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/diensten/">Diensten</a></li>
-                <li><a href="/#werkgebieden">Werkgebieden</a></li>
-                <li><a href="/#over-ons">Over Ons</a></li>
-                <li><a href="/#blog">Blog</a></li>
-                <li><a href="/#faq">FAQ</a></li>
-                <li><a href="/#contact">Contact</a></li>
-            </ul>
-            <a href="tel:085-2033172" class="nav-phone">085-2033172</a>
-        </div>
-    </nav>
-
-    <!-- Header with call buttons -->
-    <section class="header">
-        <div class="container">
-            <h1>Alle Sanibroyeur Diensten</h1>
-            <p>Professionele sanibroyeur service in heel Nederland. Van acute problemen tot preventief onderhoud - wij staan voor u klaar.</p>
-            
-            <div class="hero-buttons">
-                <a href="tel:085-2033172" class="btn-green">
-                    📞 Bel Direct: 085-2033172
+<body class="min-h-screen bg-background font-sans antialiased">
+    <!-- Header - EXACT match homepage -->
+    <header class="sticky top-0 z-50 bg-secondary text-secondary-foreground shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-20 items-center justify-between">
+                <!-- Logo -->
+                <a class="flex items-center space-x-2" href="/">
+                    <span class="text-2xl font-bold">Sanibroyeur <span class="text-primary">Techniek NL</span></span>
                 </a>
-                <a href="#contact" class="btn-blue">
-                    Vraag Nu Uw Offerte Aan
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services-section">
-        <div class="container">
-            <h2 class="section-title">Kies Uw Sanibroyeur Service</h2>
-            <p class="section-subtitle">Elke dienst beschikbaar in alle provincies en steden van Nederland voor maximale lokale dekking.</p>
-            
-            <div class="service-categories">
-                <!-- Problemen & Symptomen -->
-                <div class="category">
-                    <h3><span class="category-icon">🔧</span> Problemen & Symptomen</h3>
-                    <div class="service-list">
-                        <a href="/diensten/sanibroyeur-verstopt/" class="service-item">Sanibroyeur Verstopt</a>
-                        <a href="/diensten/sanibroyeur-lekt/" class="service-item">Sanibroyeur Lekt</a>
-                        <a href="/diensten/sanibroyeur-werkt-niet/" class="service-item">Sanibroyeur Werkt Niet</a>
-                        <a href="/diensten/sanibroyeur-start-niet/" class="service-item">Sanibroyeur Start Niet</a>
-                        <a href="/diensten/sanibroyeur-maakt-lawaai/" class="service-item">Sanibroyeur Maakt Lawaai</a>
-                        <a href="/diensten/sanibroyeur-stinkt/" class="service-item">Sanibroyeur Stinkt</a>
-                    </div>
-                </div>
-
-                <!-- Technische Symptomen -->
-                <div class="category">
-                    <h3><span class="category-icon">⚙️</span> Technische Symptomen</h3>
-                    <div class="service-list">
-                        <a href="/diensten/sanibroyeur-rood-lampje/" class="service-item">Sanibroyeur Rood Lampje</a>
-                        <a href="/diensten/sanibroyeur-motor-problemen/" class="service-item">Sanibroyeur Motor Problemen</a>
-                        <a href="/diensten/sanibroyeur-blijft-draaien/" class="service-item">Sanibroyeur Blijft Draaien</a>
-                        <a href="/diensten/sanibroyeur-zoemt/" class="service-item">Zoemt Maar Pompt Niet</a>
-                        <a href="/diensten/sanibroyeur-slaat-af/" class="service-item">Slaat Steeds Af</a>
-                        <a href="/diensten/toilet-loopt-over/" class="service-item">Toilet Loopt Over</a>
-                    </div>
-                </div>
-
-                <!-- Service Diensten -->
-                <div class="category">
-                    <h3><span class="category-icon">🛠️</span> Service Diensten</h3>
-                    <div class="service-list">
-                        <a href="/diensten/sanibroyeur-reparatie/" class="service-item">Sanibroyeur Reparatie</a>
-                        <a href="/diensten/sanibroyeur-installatie/" class="service-item">Sanibroyeur Installatie</a>
-                        <a href="/diensten/sanibroyeur-onderhoud/" class="service-item">Sanibroyeur Onderhoud</a>
-                        <a href="/diensten/sanibroyeur-ontstopping/" class="service-item">Sanibroyeur Ontstopping</a>
-                        <a href="/diensten/sanibroyeur-vervanging/" class="service-item">Sanibroyeur Vervanging</a>
-                        <a href="/diensten/sanibroyeur-spoeddienst/" class="service-item">Sanibroyeur Spoeddienst</a>
-                    </div>
-                </div>
-
-                <!-- Spoed Services -->
-                <div class="category">
-                    <h3><span class="category-icon">⚡</span> Spoed Services</h3>
-                    <div class="service-list">
-                        <a href="/diensten/sanibroyeur-24-uur/" class="service-item">24 Uur Service</a>
-                        <a href="/diensten/sanibroyeur-weekend/" class="service-item">Weekend Service</a>
-                        <a href="/diensten/sanibroyeur-avond/" class="service-item">Avond Service</a>
-                    </div>
-                </div>
-
-                <!-- Locatie Services -->
-                <div class="category">
-                    <h3><span class="category-icon">🏠</span> Locatie Services</h3>
-                    <div class="service-list">
-                        <a href="/diensten/sanibroyeur-kelder/" class="service-item">Kelder Installatie</a>
-                        <a href="/diensten/sanibroyeur-toilet/" class="service-item">Toilet Installatie</a>
-                        <a href="/diensten/sanibroyeur-badkamer/" class="service-item">Badkamer Service</a>
-                        <a href="/diensten/sanibroyeur-kantoor/" class="service-item">Kantoor Installatie</a>
-                    </div>
-                </div>
-
-                <!-- Merk Services -->
-                <div class="category">
-                    <h3><span class="category-icon">🏷️</span> Merk Specialisten</h3>
-                    <div class="service-list">
-                        <a href="/diensten/sfa-sanibroyeur/" class="service-item">SFA Sanibroyeur</a>
-                        <a href="/diensten/grundfos-sanibroyeur/" class="service-item">Grundfos Sanibroyeur</a>
-                        <a href="/diensten/saniflo-sanibroyeur/" class="service-item">Saniflo Sanibroyeur</a>
-                        <a href="/diensten/dab-sanibroyeur/" class="service-item">DAB Sanibroyeur</a>
-                    </div>
+                
+                <!-- Navigation - Simple text links like homepage -->
+                <nav class="hidden lg:flex space-x-4 items-center">
+                    <a class="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground" href="/">Home</a>
+                    <a class="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground" href="/diensten">Diensten</a>
+                    <a class="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground" href="/werkgebieden">Werkgebieden</a>
+                    <a class="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground" href="/over-ons">Over Ons</a>
+                    <a class="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground" href="/blog">Blog</a>
+                    <a class="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground" href="/faq">FAQ</a>
+                    <a class="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground" href="/contact">Contact</a>
+                    
+                    <!-- Phone button - EXACT like homepage -->
+                    <a href="tel:0852033172" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow h-8 rounded-md px-3 text-xs ml-2 bg-primary hover:bg-primary/90 text-white">
+                        <i data-lucide="phone" class="mr-2 h-4 w-4"></i>
+                        085-2033172
+                    </a>
+                </nav>
+                
+                <!-- Mobile menu button -->
+                <div class="lg:hidden flex items-center">
+                    <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors h-9 w-9 text-foreground/80 hover:bg-foreground/10 hover:text-foreground">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                        <span class="sr-only">Toggle menu</span>
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-content">
+    <!-- Main Content -->
+    <main class="flex-1 bg-gray-50">
+        <!-- Hero Section - EXACT like homepage -->
+        <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 md:py-32">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Alle Sanibroyeur Diensten</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Professionele sanibroyeur service in heel Nederland. Van acute problemen tot preventief onderhoud - wij staan voor u klaar.</p>
+                
+                <!-- Call Buttons - EXACT like homepage -->
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="tel:085-2033172" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 text-lg shadow-lg hover-scale">
+                        <i data-lucide="phone" class="mr-2 h-6 w-6"></i>
+                        Bel Direct: 085-2033172
+                    </a>
+                    <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 text-lg shadow-lg hover-scale" href="#contact">
+                        Vraag Nu Uw Offerte Aan
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Kies Uw Sanibroyeur Service</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">Elke dienst beschikbaar in alle provincies en steden van Nederland voor maximale lokale dekking.</p>
+                
+                <!-- Service Categories Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <!-- Problemen & Symptomen -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i data-lucide="wrench" class="mr-3 h-6 w-6 text-red-500"></i>
+                            Problemen & Symptomen
+                        </h3>
+                        <div class="space-y-2">
+                            <a href="/diensten/sanibroyeur-verstopt/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Verstopt</a>
+                            <a href="/diensten/sanibroyeur-lekt/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Lekt</a>
+                            <a href="/diensten/sanibroyeur-werkt-niet/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Werkt Niet</a>
+                            <a href="/diensten/sanibroyeur-start-niet/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Start Niet</a>
+                            <a href="/diensten/sanibroyeur-maakt-lawaai/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Maakt Lawaai</a>
+                            <a href="/diensten/sanibroyeur-stinkt/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Stinkt</a>
+                        </div>
+                    </div>
+
+                    <!-- Technische Symptomen -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i data-lucide="settings" class="mr-3 h-6 w-6 text-blue-500"></i>
+                            Technische Symptomen
+                        </h3>
+                        <div class="space-y-2">
+                            <a href="/diensten/sanibroyeur-rood-lampje/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Rood Lampje</a>
+                            <a href="/diensten/sanibroyeur-motor-problemen/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Motor Problemen</a>
+                            <a href="/diensten/sanibroyeur-blijft-draaien/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Blijft Draaien</a>
+                            <a href="/diensten/sanibroyeur-zoemt/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Zoemt Maar Pompt Niet</a>
+                            <a href="/diensten/sanibroyeur-slaat-af/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Slaat Steeds Af</a>
+                            <a href="/diensten/toilet-loopt-over/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Toilet Loopt Over</a>
+                        </div>
+                    </div>
+
+                    <!-- Service Diensten -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i data-lucide="tool" class="mr-3 h-6 w-6 text-green-500"></i>
+                            Service Diensten
+                        </h3>
+                        <div class="space-y-2">
+                            <a href="/diensten/sanibroyeur-reparatie/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Reparatie</a>
+                            <a href="/diensten/sanibroyeur-installatie/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Installatie</a>
+                            <a href="/diensten/sanibroyeur-onderhoud/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Onderhoud</a>
+                            <a href="/diensten/sanibroyeur-ontstopping/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Ontstopping</a>
+                            <a href="/diensten/sanibroyeur-vervanging/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Vervanging</a>
+                            <a href="/diensten/sanibroyeur-spoeddienst/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Sanibroyeur Spoeddienst</a>
+                        </div>
+                    </div>
+
+                    <!-- Spoed Services -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i data-lucide="zap" class="mr-3 h-6 w-6 text-yellow-500"></i>
+                            Spoed Services
+                        </h3>
+                        <div class="space-y-2">
+                            <a href="/diensten/sanibroyeur-24-uur/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">24 Uur Service</a>
+                            <a href="/diensten/sanibroyeur-weekend/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Weekend Service</a>
+                            <a href="/diensten/sanibroyeur-avond/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Avond Service</a>
+                        </div>
+                    </div>
+
+                    <!-- Locatie Services -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i data-lucide="home" class="mr-3 h-6 w-6 text-purple-500"></i>
+                            Locatie Services
+                        </h3>
+                        <div class="space-y-2">
+                            <a href="/diensten/sanibroyeur-kelder/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Kelder Installatie</a>
+                            <a href="/diensten/sanibroyeur-toilet/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Toilet Installatie</a>
+                            <a href="/diensten/sanibroyeur-badkamer/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Badkamer Service</a>
+                            <a href="/diensten/sanibroyeur-kantoor/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Kantoor Installatie</a>
+                        </div>
+                    </div>
+
+                    <!-- Merk Services -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i data-lucide="tag" class="mr-3 h-6 w-6 text-indigo-500"></i>
+                            Merk Specialisten
+                        </h3>
+                        <div class="space-y-2">
+                            <a href="/diensten/sfa-sanibroyeur/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">SFA Sanibroyeur</a>
+                            <a href="/diensten/grundfos-sanibroyeur/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Grundfos Sanibroyeur</a>
+                            <a href="/diensten/saniflo-sanibroyeur/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">Saniflo Sanibroyeur</a>
+                            <a href="/diensten/dab-sanibroyeur/" class="block p-3 bg-gray-50 rounded-md hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-300">DAB Sanibroyeur</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer - EXACT like homepage -->
+    <footer class="bg-gray-900 text-white py-12" id="contact">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <!-- Bedrijfsinfo -->
-                <div class="footer-section">
-                    <h3>Sanibroyeur Techniek NL</h3>
-                    <p>Uw expert in Sanibroyeur installatie, onderhoud en reparatie in Nederland. Snelle service en vakmanschap voor alle typen broyeur toiletten en wc vermalers.</p>
-                    <a href="tel:085-2033172" class="footer-cta">Direct Contact</a>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sanibroyeur Techniek NL</h3>
+                    <p class="text-gray-300 mb-4">Uw expert in Sanibroyeur installatie, onderhoud en reparatie in Nederland. Snelle service en vakmanschap voor alle typen broyeur toiletten en wc vermalers.</p>
+                    <a href="tel:085-2033172" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 transition-colors">
+                        Direct Contact
+                    </a>
                 </div>
                 
-                <!-- Navigatie - Alle blauw -->
-                <div class="footer-section">
-                    <h3>Pagina's</h3>
-                    <ul class="footer-nav">
-                        <li><a href="/">🏠 Home</a></li>
-                        <li><a href="/diensten/">🔧 Diensten</a></li>
-                        <li><a href="/#werkgebieden">🗺️ Werkgebieden</a></li>
-                        <li><a href="/#faq">❓ FAQ</a></li>
-                        <li><a href="/#blog">📰 Blog</a></li>
-                        <li><a href="/#contact">📞 Contact</a></li>
-                    </ul>
+                <!-- Navigatie -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Pagina's</h3>
+                    <div class="space-y-2">
+                        <a href="/" class="block text-gray-300 hover:text-white transition-colors">🏠 Home</a>
+                        <a href="/diensten/" class="block text-gray-300 hover:text-white transition-colors">🔧 Diensten</a>
+                        <a href="/werkgebieden/" class="block text-gray-300 hover:text-white transition-colors">🗺️ Werkgebieden</a>
+                        <a href="/faq/" class="block text-gray-300 hover:text-white transition-colors">❓ FAQ</a>
+                        <a href="/blog/" class="block text-gray-300 hover:text-white transition-colors">📰 Blog</a>
+                        <a href="/contact/" class="block text-gray-300 hover:text-white transition-colors">📞 Contact</a>
+                    </div>
                 </div>
                 
                 <!-- Contact Info -->
-                <div class="footer-section">
-                    <h3>Contact & Info</h3>
-                    <div class="contact-info">
-                        <p>📍 Lochemseweg 7<br>7475PA Markelo</p>
-                        <p>📞 <a href="tel:085-2033172">085-2033172</a></p>
-                        <p>✉️ <a href="mailto:sanibroyeurtechnieknederland@gmail.com">sanibroyeurtechnieknederland@gmail.com</a></p>
-                        <p style="font-size: 0.9rem; margin-top: 15px;">
-                            KVK: 94244833<br>
-                            BTW: NL005078347B89<br>
-                            IBAN: NL93 RABO 0318 3322 05
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact & Info</h3>
+                    <div class="text-gray-300 space-y-2">
+                        <p class="flex items-center">
+                            <i data-lucide="map-pin" class="mr-2 h-4 w-4"></i>
+                            Lochemseweg 7<br>7475PA Markelo
                         </p>
+                        <p class="flex items-center">
+                            <i data-lucide="phone" class="mr-2 h-4 w-4"></i>
+                            <a href="tel:085-2033172" class="text-green-400 hover:text-green-300">085-2033172</a>
+                        </p>
+                        <p class="flex items-center">
+                            <i data-lucide="mail" class="mr-2 h-4 w-4"></i>
+                            <a href="mailto:sanibroyeurtechnieknederland@gmail.com" class="text-green-400 hover:text-green-300">sanibroyeurtechnieknederland@gmail.com</a>
+                        </p>
+                        <div class="text-sm text-gray-400 mt-4">
+                            <p>KVK: 94244833</p>
+                            <p>BTW: NL005078347B89</p>
+                            <p>IBAN: NL93 RABO 0318 3322 05</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- Juridische Links -->
-            <div class="legal-section">
-                <div class="legal-links">
-                    <a href="/privacybeleid/">📋 Privacybeleid</a>
-                    <a href="/algemene-voorwaarden/">📄 Algemene Voorwaarden</a>
+            <div class="border-t border-gray-700 pt-6 mb-6">
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="/privacybeleid/" class="text-green-400 hover:text-green-300 transition-colors">📋 Privacybeleid</a>
+                    <a href="/algemene-voorwaarden/" class="text-green-400 hover:text-green-300 transition-colors">📄 Algemene Voorwaarden</a>
                 </div>
             </div>
             
-            <div class="footer-bottom">
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-400">
                 <p>&copy; 2025 Sanibroyeur Techniek NL. Alle rechten voorbehouden.</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating Contact Buttons -->
-    <div class="floating-contact">
-        <a href="tel:085-2033172" class="floating-btn btn-phone" title="Bel ons direct">📞</a>
-        <a href="https://wa.me/31852033172" class="floating-btn btn-whatsapp" title="Chat met ons op WhatsApp">💬</a>
+    <div class="fixed right-4 bottom-4 flex flex-col gap-3 z-50">
+        <a href="tel:085-2033172" class="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg hover-scale" title="Bel ons direct">
+            <i data-lucide="phone" class="h-6 w-6"></i>
+        </a>
+        <a href="https://wa.me/31852033172" class="w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center shadow-lg hover-scale" title="Chat met ons op WhatsApp">
+            <i data-lucide="message-circle" class="h-6 w-6"></i>
+        </a>
     </div>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
 
